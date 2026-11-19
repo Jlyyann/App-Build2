@@ -1,29 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinguaLearn</title>
 
-        <!-- Bootstrap Link -->
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#home">LinguaLearn</a>
 
-		<!-- Google Font -->
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+            <input type="checkbox" id="menu-toggle">
+            <label class="navbar-toggler" for="menu-toggle">
+                <span class="navbar-toggler-icon"></span>
+            </label>
 
-		<!-- Css External Link -->
-		<link rel="stylesheet" type="text/css" href="index.css">
-    </head>
-    <body>
-        
+            <div class="navbar-menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#featured">Featured</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#categories-section">Categories</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#resources">Resources</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                </ul>
 
+                <div class="d-flex align-items-center mt-2 mt-lg-0 navbar-tools">
+                    <input class="form-control me-2" id="navbar-search" type="search" placeholder="Search tutorials...">
+                    <button class="btn btn-light rounded-circle login-button" type="button" aria-label="Log in" title="Log In">
+                        👤
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
 
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="home-section">
+            <div class="container">
+                <div class="row align-items-center g-4">
+                    <div class="col-lg-6">
+                        <p class="welcome-text">Welcome to LinguaLearn</p>
+                        <h1>Learn Languages. Build Confidence. Communicate Better.</h1>
+                        <p class="lead">Explore simple lessons and resources for improving your language skills.</p>
+                        <a href="#categories-section" class="btn main-button">Explore Lessons</a>
+                    </div>
+                    <div class="col-lg-6">
+                        <img class="home-image" src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=900&q=80" alt="Students learning together">
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <!-- Introduction Section -->
+        <section id="introduction" class="section-space">
+            <div class="container text-center">
+                <h2>Discover the Power of Language</h2>
+                <p class="section-description">LinguaLearn helps students improve grammar, vocabulary, pronunciation, and reading comprehension through clear lessons and practice activities.</p>
 
-        <!-- Bootstrap Script -->
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+                <div class="row g-3 mt-4 intro-highlights">
+                    <div class="col-md-4">
+                        <div class="intro-item">
+                            <span>4</span>
+                            <strong>Learning Areas</strong>
+                            <small>Grammar, vocabulary, pronunciation, and reading</small>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="intro-item">
+                            <span>✓</span>
+                            <strong>Beginner Friendly</strong>
+                            <small>Clear lessons that are easy to understand</small>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="intro-item">
+                            <span>⏱</span>
+                            <strong>Learn at Your Pace</strong>
+                            <small>Practice whenever you are ready to learn</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    </body>
+        <!-- Featured Section -->
+        <section id="featured" class="section-space light-section">
+            <div class="container">
+                <div class="text-center section-heading">
+                    <h2>Featured Lessons</h2>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card lesson-card h-100">
+                            <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&w=700&q=80" class="card-img-top" alt="Students having a conversation">
+                            <div class="card-body">
+                                <div class="lesson-icon">💬</div>
+                                <h3 class="card-title">Basic Conversation</h3>
+                                <p class="card-text">Learn greetings and common expressions used in everyday conversations.</p>
+                                <a href="#resources">Read More →</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card lesson-card h-100">
+                            <img src="https://images.unsplash.com/photo-1529390079861-591de354faf5?auto=format&fit=crop&w=700&q=80" class="card-img-top" alt="Students practicing together">
+                            <div class="card-body">
+                                <div class="lesson-icon">👂</div>
+                                <h3 class="card-title">Listening and Speaking</h3>
+                                <p class="card-text">Practice listening carefully and speaking with more confidence.</p>
+                                <a href="#resources">Read More →</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card lesson-card h-100">
+                            <img src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&w=700&q=80" class="card-img-top" alt="Student reading and studying">
+                            <div class="card-body">
+                                <div class="lesson-icon">📖</div>
+                                <h3 class="card-title">Reading Skills</h3>
+                                <p class="card-text">Improve comprehension by finding main ideas and important details.</p>
+                                <a href="#resources">Read More →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Categories Section -->
+        <section id="categories-section" class="section-space">
+            <div class="container">
+                <div class="text-center section-heading">
+                    <h2>Explore Learning Categories</h2>
+                </div>
+
+                <div class="row g-3" id="categories">
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="category-box">
+                            <span>📝</span>
+                            <h3>Grammar</h3>
+                            <p>Learn sentence rules and correct language structure.</p>
+                            <a href="#resources">Explore Lessons →</a>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="category-box">
+                            <span>🔤</span>
+                            <h3>Vocabulary</h3>
+                            <p>Discover useful words and improve word knowledge.</p>
+                            <a href="#resources">Explore Lessons →</a>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="category-box">
+                            <span>🔊</span>
+                            <h3>Pronunciation</h3>
+                            <p>Practice sounds and speak words more clearly.</p>
+                            <a href="#resources">Explore Lessons →</a>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="category-box">
+                            <span>📚</span>
+                            <h3>Reading</h3>
+                            <p>Build comprehension through short reading activities.</p>
+                            <a href="#resources">Explore Lessons →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sample Resources -->
+        <section id="resources" class="section-space light-section">
+            <div class="container">
+                <div class="text-center section-heading">
+                    <h2>Sample Resources</h2>
+                </div>
+
+                <div class="list-group resource-list">
+                    <a href="#introduction" class="list-group-item list-group-item-action resource-item">
+                        <span class="resource-icon">📝</span>
+                        <span class="resource-details">
+                            <small>Grammar Guide</small>
+                            <strong>Grammar Basics: Parts of Speech</strong>
+                            <span>Review nouns, verbs, adjectives, and other basic parts of speech.</span>
+                        </span>
+                        <span class="resource-arrow">→</span>
+                    </a>
+
+                    <a href="#introduction" class="list-group-item list-group-item-action resource-item">
+                        <span class="resource-icon">🔤</span>
+                        <span class="resource-details">
+                            <small>Vocabulary List</small>
+                            <strong>Common Words for Daily Conversations</strong>
+                            <span>Learn useful words and phrases for everyday communication.</span>
+                        </span>
+                        <span class="resource-arrow">→</span>
+                    </a>
+
+                    <a href="#introduction" class="list-group-item list-group-item-action resource-item">
+                        <span class="resource-icon">🔊</span>
+                        <span class="resource-details">
+                            <small>Speaking Guide</small>
+                            <strong>Pronunciation and Word Stress Guide</strong>
+                            <span>Practice clear sounds and correct stress when speaking.</span>
+                        </span>
+                        <span class="resource-arrow">→</span>
+                    </a>
+
+                    <a href="#introduction" class="list-group-item list-group-item-action resource-item">
+                        <span class="resource-icon">📖</span>
+                        <span class="resource-details">
+                            <small>Reading Activity</small>
+                            <strong>Reading Comprehension Practice</strong>
+                            <span>Read a short passage and answer simple questions.</span>
+                        </span>
+                        <span class="resource-arrow">→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section-space">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <img class="about-image" src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80" alt="Students sharing ideas while studying">
+                        <h2>About LinguaLearn</h2>
+                        <p>LinguaLearn is a web-based educational resource hub created to help students develop language and communication skills through organized learning materials.</p>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div id="mission" class="mission-box">
+                            <h3>Our Mission</h3>
+                            <p>To make language learning simple and accessible while helping students communicate with confidence.</p>
+                        </div>
+
+                        <div id="contact" class="contact-info">
+                            <h3>Contact Information</h3>
+                            <p>Email: hello@lingualearn.com</p>
+                            <p>Phone: +63 912 345 6789</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="text-center">
+        <p class="mb-0">© 2026 LinguaLearn</p>
+    </footer>
+</body>
 </html>
